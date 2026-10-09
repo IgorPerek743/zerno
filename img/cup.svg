@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Чашка кофе">
+  <ellipse cx="100" cy="166" rx="70" ry="12" fill="#e8e8ed"/>
+  <path d="M45 80 H145 V120 A50 46 0 0 1 45 120 Z" fill="#fff" stroke="#d2d2d7" stroke-width="3"/>
+  <path d="M145 92 h12 a16 16 0 0 1 0 32 h-16" fill="none" stroke="#d2d2d7" stroke-width="6"/>
+  <ellipse cx="95" cy="80" rx="50" ry="10" fill="#7a4b2a"/>
+  <ellipse cx="95" cy="79" rx="20" ry="4" fill="#c8a27a"/>
+  <path d="M80 60c-6-10 6-14 0-26M100 58c-6-10 6-14 0-26M120 60c-6-10 6-14 0-26" stroke="#c7c7cc" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

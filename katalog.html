@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог кофе - Зерно</title>
+  <meta name="description" content="Каталог свежеобжаренного кофе: моносорта и эспрессо-смесь.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="20" height="20">Зерно</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Меню</button>
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="katalog.html" aria-current="page">Каталог</a>
+      <a href="statyi.html">Статьи</a>
+      <a href="o-nas.html">О нас</a>
+      <a href="kontakty.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Каталог</h1>
+    <p class="lead">Шесть сортов, обжаренных на этой неделе. Помол - бесплатно, под ваш способ заваривания.</p>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <div class="filter" role="group" aria-label="Фильтр по способу заваривания">
+      <button data-filter="all" aria-pressed="true">Все</button>
+      <button data-filter="filter" aria-pressed="false">Фильтр и пуровер</button>
+      <button data-filter="espresso" aria-pressed="false">Эспрессо</button>
+      <button data-filter="turka" aria-pressed="false">Турка</button>
+    </div>
+    <div class="cards">
+      <div class="card" data-type="filter">
+        <img class="art" src="img/pourover.svg" alt="">
+        <div class="tags"><span class="tag">Светлая обжарка</span><span class="tag">Для фильтра</span></div>
+        <h3>Эфиопия Иргачефф</h3>
+        <p>Цветы, бергамот, черника. Яркая кислотность.</p>
+        <div class="price">990 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Эфиопия Иргачефф">Заказать</a>
+      </div>
+      <div class="card" data-type="filter">
+        <img class="art" src="img/pourover.svg" alt="">
+        <div class="tags"><span class="tag">Светлая обжарка</span><span class="tag">Для фильтра</span></div>
+        <h3>Кения АА</h3>
+        <p>Черная смородина, грейпфрут, сочное тело.</p>
+        <div class="price">1090 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Кения АА">Заказать</a>
+      </div>
+      <div class="card" data-type="filter espresso">
+        <img class="art" src="img/bag.svg" alt="">
+        <div class="tags"><span class="tag">Средняя обжарка</span><span class="tag">Универсальный</span></div>
+        <h3>Колумбия Супремо</h3>
+        <p>Карамель, орех, мягкая кислотность.</p>
+        <div class="price">890 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Колумбия Супремо">Заказать</a>
+      </div>
+      <div class="card" data-type="espresso turka">
+        <img class="art" src="img/bag.svg" alt="">
+        <div class="tags"><span class="tag">Средняя обжарка</span><span class="tag">Универсальный</span></div>
+        <h3>Бразилия Сантос</h3>
+        <p>Молочный шоколад, арахис, низкая кислотность.</p>
+        <div class="price">790 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Бразилия Сантос">Заказать</a>
+      </div>
+      <div class="card" data-type="espresso">
+        <img class="art" src="img/espresso.svg" alt="">
+        <div class="tags"><span class="tag">Средне-темная обжарка</span><span class="tag">Для эспрессо</span></div>
+        <h3>Эспрессо-смесь «Зерно»</h3>
+        <p>Арабика с 20% робусты: горький шоколад и плотная крема.</p>
+        <div class="price">850 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Эспрессо-смесь «Зерно»">Заказать</a>
+      </div>
+      <div class="card" data-type="espresso turka">
+        <img class="art" src="img/cup.svg" alt="">
+        <div class="tags"><span class="tag">Темная обжарка</span><span class="tag">Для турки</span></div>
+        <h3>Гватемала Антигуа</h3>
+        <p>Какао, специи, долгое послевкусие.</p>
+        <div class="price">940 ₽ <span class="small">за 250 г</span></div>
+        <a class="btn" href="kontakty.html#order" data-product="Гватемала Антигуа">Заказать</a>
+      </div>
+    </div>
+    <p class="small" style="text-align:center;margin-top:24px">Не знаете, что выбрать? Прочитайте статью <a href="obzharka.html">о степенях обжарки</a>.</p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Магазин</h4>
+        <ul><li><a href="katalog.html">Каталог зерна</a></li><li><a href="kontakty.html#order">Оформить заказ</a></li><li><a href="kontakty.html">Доставка и самовывоз</a></li></ul>
+      </div>
+      <div>
+        <h4>Статьи</h4>
+        <ul><li><a href="arabika-robusta.html">Арабика и робуста</a></li><li><a href="obzharka.html">Степени обжарки</a></li><li><a href="zavarivanie.html">Способы заваривания</a></li><li><a href="istoriya.html">История кофе</a></li></ul>
+      </div>
+      <div>
+        <h4>Связаться</h4>
+        <ul><li><a href="tel:+79990001122">+7 (999) 000-11-22</a></li><li><a href="mailto:hello@zerno.example">hello@zerno.example</a></li><li>ежедневно 9:00-21:00</li></ul>
+      </div>
+    </div>
+    <div class="owner">
+      <span>© <span class="year">2026</span> Кофейный магазин «Зерно», Москва.</span>
+      <span>Сайт принадлежит <strong>Перекрестову И.С.</strong>, группа 233-322, Московский Политех. Учебный проект.</span>
+    </div>
+    <div class="counters">
+      <!-- ===== СЧЕТЧИКИ: место для кнопок счетчиков ===== -->
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

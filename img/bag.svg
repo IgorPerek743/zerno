@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Пачка кофе">
+  <path d="M55 40 L145 40 L155 180 L45 180 Z" fill="#c8a27a"/>
+  <path d="M55 40 L145 40 L140 56 L60 56 Z" fill="#a9825c"/>
+  <rect x="68" y="88" width="64" height="58" rx="6" fill="#fff"/>
+  <ellipse cx="100" cy="112" rx="11" ry="15" transform="rotate(30 100 112)" fill="#7a4b2a"/>
+  <path d="M95 101c3 4 4 12 10 22" stroke="#fff" stroke-width="2" fill="none"/>
+  <rect x="80" y="132" width="40" height="4" rx="2" fill="#d2d2d7"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Эспрессо">
+  <ellipse cx="100" cy="160" rx="60" ry="12" fill="#e8e8ed"/>
+  <path d="M65 100 H135 V128 A35 30 0 0 1 65 128 Z" fill="#fff" stroke="#d2d2d7" stroke-width="3"/>
+  <path d="M135 108 h8 a10 10 0 0 1 0 20 h-10" fill="none" stroke="#d2d2d7" stroke-width="5"/>
+  <ellipse cx="100" cy="100" rx="35" ry="7" fill="#a9825c"/>
+  <path d="M100 40 v44" stroke="#7a4b2a" stroke-width="5" stroke-linecap="round"/>
+  <rect x="80" y="26" width="40" height="14" rx="4" fill="#6e6e73"/>
+</svg>

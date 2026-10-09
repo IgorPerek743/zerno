@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Карта кофейного пояса">
+  <circle cx="100" cy="100" r="70" fill="#f5f5f7" stroke="#d2d2d7" stroke-width="3"/>
+  <rect x="30" y="88" width="140" height="24" fill="#c8a27a" opacity=".55"/>
+  <path d="M60 60c14-8 30 4 24 18s-24 8-28 24 10 30 0 40" fill="none" stroke="#6e6e73" stroke-width="3"/>
+  <path d="M120 50c10 12 30 10 32 26s-16 22-14 38" fill="none" stroke="#6e6e73" stroke-width="3"/>
+  <circle cx="122" cy="98" r="6" fill="#7a4b2a"/><circle cx="70" cy="104" r="6" fill="#7a4b2a"/><circle cx="150" cy="106" r="6" fill="#7a4b2a"/>
+</svg>

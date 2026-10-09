@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты и заказ - Зерно</title>
+  <meta name="description" content="Адрес магазина «Зерно», доставка по Москве и форма заказа кофе.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="20" height="20">Зерно</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Меню</button>
+    <nav class="menu" id="menu" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="katalog.html">Каталог</a>
+      <a href="statyi.html">Статьи</a>
+      <a href="o-nas.html">О нас</a>
+      <a href="kontakty.html" aria-current="page">Контакты</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Контакты и заказ</h1>
+    <p class="lead">Заберите кофе в магазине или закажите доставку по Москве.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <h2>Магазин</h2>
+      <ul class="info-list">
+        <li><b>Адрес</b>Москва, ул. Примерная, д. 5</li>
+        <li><b>Часы работы</b>ежедневно 9:00-21:00</li>
+        <li><b>Телефон</b><a href="tel:+79990001122">+7 (999) 000-11-22</a></li>
+        <li><b>Почта</b><a href="mailto:hello@zerno.example">hello@zerno.example</a></li>
+        <li><b>Доставка</b>по Москве на следующий день, бесплатно от 2000 ₽</li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="order-title">Заказ</h2>
+      <form id="order" aria-labelledby="order-title">
+        <label for="product">Кофе</label>
+        <select id="product" name="product"><option>Эфиопия Иргачефф</option><option>Кения АА</option><option>Колумбия Супремо</option><option>Бразилия Сантос</option><option>Эспрессо-смесь «Зерно»</option><option>Гватемала Антигуа</option></select>
+        <label for="grind">Помол</label>
+        <select id="grind" name="grind"><option>В зернах</option><option>Для турки</option><option>Для эспрессо</option><option>Для фильтра</option><option>Для френч-пресса</option></select>
+        <label for="name">Имя</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <label for="phone">Телефон</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        <p style="margin-top:18px"><button class="btn" type="submit">Оформить заказ</button></p>
+        <p class="small">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        <div class="form-ok" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Магазин</h4>
+        <ul><li><a href="katalog.html">Каталог зерна</a></li><li><a href="kontakty.html#order">Оформить заказ</a></li><li><a href="kontakty.html">Доставка и самовывоз</a></li></ul>
+      </div>
+      <div>
+        <h4>Статьи</h4>
+        <ul><li><a href="arabika-robusta.html">Арабика и робуста</a></li><li><a href="obzharka.html">Степени обжарки</a></li><li><a href="zavarivanie.html">Способы заваривания</a></li><li><a href="istoriya.html">История кофе</a></li></ul>
+      </div>
+      <div>
+        <h4>Связаться</h4>
+        <ul><li><a href="tel:+79990001122">+7 (999) 000-11-22</a></li><li><a href="mailto:hello@zerno.example">hello@zerno.example</a></li><li>ежедневно 9:00-21:00</li></ul>
+      </div>
+    </div>
+    <div class="owner">
+      <span>© <span class="year">2026</span> Кофейный магазин «Зерно», Москва.</span>
+      <span>Сайт принадлежит <strong>Перекрестову И.С.</strong>, группа 233-322, Московский Политех. Учебный проект.</span>
+    </div>
+    <div class="counters">
+      <!-- ===== СЧЕТЧИКИ: место для кнопок счетчиков ===== -->
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
