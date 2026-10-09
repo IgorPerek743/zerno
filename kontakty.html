@@ -1,89 +1,149 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Контакты и заказ - Зерно</title>
-  <meta name="description" content="Адрес магазина «Зерно», доставка по Москве и форма заказа кофе.">
-  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Контакты и заказ - Зерно</title>
+<meta content="Адрес магазина «Зерно», доставка по Москве и форма заказа кофе." name="description"/>
+<link href="img/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="nav">
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="20" height="20">Зерно</a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Меню</button>
-    <nav class="menu" id="menu" aria-label="Основное меню">
-      <a href="index.html">Главная</a>
-      <a href="katalog.html">Каталог</a>
-      <a href="statyi.html">Статьи</a>
-      <a href="o-nas.html">О нас</a>
-      <a href="kontakty.html" aria-current="page">Контакты</a>
-    </nav>
-  </div>
+<!--LiveInternet counter--><script>
+new Image().src = "https://counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+
+";"+Math.random();</script><!--/LiveInternet-->
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7752709,
+            attributes_dataset: [ "zerno-attribute" ],
+            trackHashes: true,
+            user_id: null,
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+<img alt="Топ-100" src="//counter.rambler.ru/top100.cnt?pid=7752709"/>
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+<!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3800585", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");
+</script>
+<noscript><div><img alt="Top.Mail.Ru" src="https://top-fwz1.mail.ru/counter?id=3800585;js=na" style="position:absolute;left:-9999px;"/></div></noscript>
+<!-- /Top.Mail.Ru counter -->
+<header class="nav" data-zerno-attribute="шапка">
+<div class="wrap">
+<a class="logo" data-zerno-attribute="логотип" href="index.html"><img alt="" height="20" src="img/logo.svg" width="20"/>Зерно</a>
+<button aria-controls="menu" aria-expanded="false" class="menu-btn" data-zerno-attribute="кнопка меню">Меню</button>
+<nav aria-label="Основное меню" class="menu" data-zerno-attribute="меню" id="menu">
+<a data-zerno-attribute="Главная" href="index.html">Главная</a>
+<a data-zerno-attribute="Каталог" href="katalog.html">Каталог</a>
+<a data-zerno-attribute="Статьи" href="statyi.html">Статьи</a>
+<a data-zerno-attribute="О нас" href="o-nas.html">О нас</a>
+<a aria-current="page" data-zerno-attribute="Контакты" href="kontakty.html">Контакты</a>
+</nav>
+</div>
 </header>
 <main>
-<section class="page-head">
-  <div class="wrap">
-    <h1>Контакты и заказ</h1>
-    <p class="lead">Заберите кофе в магазине или закажите доставку по Москве.</p>
-  </div>
+<section class="page-head" data-zerno-attribute="заголовок страницы">
+<div class="wrap">
+<h1>Контакты и заказ</h1>
+<p class="lead">Заберите кофе в магазине или закажите доставку по Москве.</p>
+</div>
 </section>
-<section class="section">
-  <div class="wrap two-col">
-    <div>
-      <h2>Магазин</h2>
-      <ul class="info-list">
-        <li><b>Адрес</b>Москва, ул. Примерная, д. 5</li>
-        <li><b>Часы работы</b>ежедневно 9:00-21:00</li>
-        <li><b>Телефон</b><a href="tel:+79990001122">+7 (999) 000-11-22</a></li>
-        <li><b>Почта</b><a href="mailto:hello@zerno.example">hello@zerno.example</a></li>
-        <li><b>Доставка</b>по Москве на следующий день, бесплатно от 2000 ₽</li>
-      </ul>
-    </div>
-    <div>
-      <h2 id="order-title">Заказ</h2>
-      <form id="order" aria-labelledby="order-title">
-        <label for="product">Кофе</label>
-        <select id="product" name="product"><option>Эфиопия Иргачефф</option><option>Кения АА</option><option>Колумбия Супремо</option><option>Бразилия Сантос</option><option>Эспрессо-смесь «Зерно»</option><option>Гватемала Антигуа</option></select>
-        <label for="grind">Помол</label>
-        <select id="grind" name="grind"><option>В зернах</option><option>Для турки</option><option>Для эспрессо</option><option>Для фильтра</option><option>Для френч-пресса</option></select>
-        <label for="name">Имя</label>
-        <input id="name" name="name" autocomplete="name" required>
-        <label for="phone">Телефон</label>
-        <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-        <p style="margin-top:18px"><button class="btn" type="submit">Оформить заказ</button></p>
-        <p class="small">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-        <div class="form-ok" role="status"></div>
-      </form>
-    </div>
-  </div>
+<section class="section" data-zerno-attribute="контакты и заказ">
+<div class="wrap two-col">
+<div>
+<h2>Магазин</h2>
+<ul class="info-list" data-zerno-attribute="магазин">
+<li><b>Адрес</b>Москва, ул. Примерная, д. 5</li>
+<li><b>Часы работы</b>ежедневно 9:00-21:00</li>
+<li><b>Телефон</b><a data-zerno-attribute="телефон" href="tel:+79990001122">+7 (999) 000-11-22</a></li>
+<li><b>Почта</b><a data-zerno-attribute="почта" href="mailto:hello@zerno.example">hello@zerno.example</a></li>
+<li><b>Доставка</b>по Москве на следующий день, бесплатно от 2000 ₽</li>
+</ul>
+</div>
+<div>
+<h2 id="order-title">Заказ</h2>
+<form aria-labelledby="order-title" data-zerno-attribute="форма заказа" id="order">
+<label for="product">Кофе</label>
+<select id="product" name="product"><option>Эфиопия Иргачефф</option><option>Кения АА</option><option>Колумбия Супремо</option><option>Бразилия Сантос</option><option>Эспрессо-смесь «Зерно»</option><option>Гватемала Антигуа</option></select>
+<label for="grind">Помол</label>
+<select id="grind" name="grind"><option>В зернах</option><option>Для турки</option><option>Для эспрессо</option><option>Для фильтра</option><option>Для френч-пресса</option></select>
+<label for="name">Имя</label>
+<input autocomplete="name" id="name" name="name" required=""/>
+<label for="phone">Телефон</label>
+<input autocomplete="tel" id="phone" name="phone" required="" type="tel"/>
+<p style="margin-top:18px"><button class="btn" data-zerno-attribute="кнопка оформить заказ" type="submit">Оформить заказ</button></p>
+<p class="small">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+<div class="form-ok" role="status"></div>
+</form>
+</div>
+</div>
 </section>
 </main>
-<footer class="footer">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <h4>Магазин</h4>
-        <ul><li><a href="katalog.html">Каталог зерна</a></li><li><a href="kontakty.html#order">Оформить заказ</a></li><li><a href="kontakty.html">Доставка и самовывоз</a></li></ul>
-      </div>
-      <div>
-        <h4>Статьи</h4>
-        <ul><li><a href="arabika-robusta.html">Арабика и робуста</a></li><li><a href="obzharka.html">Степени обжарки</a></li><li><a href="zavarivanie.html">Способы заваривания</a></li><li><a href="istoriya.html">История кофе</a></li></ul>
-      </div>
-      <div>
-        <h4>Связаться</h4>
-        <ul><li><a href="tel:+79990001122">+7 (999) 000-11-22</a></li><li><a href="mailto:hello@zerno.example">hello@zerno.example</a></li><li>ежедневно 9:00-21:00</li></ul>
-      </div>
-    </div>
-    <div class="owner">
-      <span>© <span class="year">2026</span> Кофейный магазин «Зерно», Москва.</span>
-      <span>Сайт принадлежит <strong>Перекрестову И.С.</strong>, группа 233-322, Московский Политех. Учебный проект.</span>
-    </div>
-    <div class="counters">
-      <!-- ===== СЧЕТЧИКИ: место для кнопок счетчиков ===== -->
-    </div>
-  </div>
+<footer class="footer" data-zerno-attribute="подвал">
+<div class="wrap">
+<div class="cols">
+<div data-zerno-attribute="Магазин">
+<h4>Магазин</h4>
+<ul><li><a data-zerno-attribute="Каталог зерна" href="katalog.html">Каталог зерна</a></li><li><a data-zerno-attribute="Оформить заказ" href="kontakty.html#order">Оформить заказ</a></li><li><a data-zerno-attribute="Доставка и самовывоз" href="kontakty.html">Доставка и самовывоз</a></li></ul>
+</div>
+<div data-zerno-attribute="Статьи">
+<h4>Статьи</h4>
+<ul><li><a data-zerno-attribute="Арабика и робуста" href="arabika-robusta.html">Арабика и робуста</a></li><li><a data-zerno-attribute="Степени обжарки" href="obzharka.html">Степени обжарки</a></li><li><a data-zerno-attribute="Способы заваривания" href="zavarivanie.html">Способы заваривания</a></li><li><a data-zerno-attribute="История кофе" href="istoriya.html">История кофе</a></li></ul>
+</div>
+<div data-zerno-attribute="Связаться">
+<h4>Связаться</h4>
+<ul><li><a data-zerno-attribute="+7 (999) 000-11-22" href="tel:+79990001122">+7 (999) 000-11-22</a></li><li><a data-zerno-attribute="hello@zerno.example" href="mailto:hello@zerno.example">hello@zerno.example</a></li><li>ежедневно 9:00-21:00</li></ul>
+</div>
+</div>
+<div class="owner">
+<span>© <span class="year">2026</span> Кофейный магазин «Зерно», Москва.</span>
+<span>Сайт принадлежит <strong>Перекрестову И.С.</strong>, группа 233-322, Московский Политех. Учебный проект.</span>
+</div>
+<div class="counters" data-zerno-attribute="счетчики">
+<!-- ===== СЧЕТЧИКИ: место для кнопок счетчиков ===== -->
+<!--LiveInternet logo--><a data-zerno-attribute="LiveInternet" href="https://www.liveinternet.ru/click" target="_blank"><img alt="" height="31" src="https://counter.yadro.ru/logo?53.1" style="border:0" title="LiveInternet: показано число просмотров и посетителей за 24 часа" width="88"/></a><!--/LiveInternet-->
+<!-- Виджет Рамблер/топ-100 -->
+<a data-zerno-attribute="Топ-100" href="https://top100.rambler.ru/" rel="noopener" target="_blank"><img alt="Рамблер/топ-100" height="31" src="img/top100.svg" title="Рамблер/топ-100" width="88"/></a>
+<!-- Логотип Top.Mail.Ru (если картинка сервиса недоступна, показывается img/topmail.svg) -->
+<a data-zerno-attribute="Top.Mail.Ru" href="https://top.mail.ru/jump?from=3800585" rel="noopener" target="_blank"><img alt="Top.Mail.Ru" height="31" onerror="this.onerror=null;this.src='img/topmail.svg';" src="https://top-fwz1.mail.ru/counter?id=3800585;t=479;l=1" style="border:0;" title="Top.Mail.Ru" width="88"/></a>
+<!-- ===== КОНЕЦ СЧЕТЧИКОВ ===== -->
+</div>
+</div>
 </footer>
 <script src="js/main.js"></script>
 </body>

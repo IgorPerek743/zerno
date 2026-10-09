@@ -24,9 +24,16 @@ filterBtns.forEach(btn => {
   });
 });
 
+// Цели Top.Mail.Ru / MyTracker (счетчик 3800585)
+function tmrGoal(goal) {
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({ id: "3800585", type: "reachGoal", goal: goal });
+}
+
 // 3. Кнопка «Заказать» в каталоге подставляет товар в форму заказа
 document.querySelectorAll('[data-product]').forEach(a => {
   a.addEventListener('click', () => {
+    tmrGoal('order_click'); // Цель 1: клик «Заказать» в каталоге
     try { sessionStorage.setItem('zerno-product', a.dataset.product); } catch (e) {}
   });
 });
@@ -43,6 +50,7 @@ const form = document.querySelector('#order');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
+    tmrGoal('order_submit'); // Цель 2: отправка формы заказа
     const name = form.querySelector('#name').value.trim();
     const ok = document.querySelector('.form-ok');
     ok.textContent = `${name || 'Спасибо'}, заказ принят. Мы позвоним, чтобы подтвердить доставку.`;
